@@ -1,0 +1,19 @@
+.transactionsHistory{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 35px;
+    background-color: white;
+    box-shadow: 0 0 3px rgba(8, 8, 10, 0.5);
+    text-align: center;
+}
+.thead{
+    background-color: #00bcd5;
+    color: white;
+    text-align: center;
+}
+.tbodyPart:nth-child(2n) {
+    background-color: #ecf1f4;  
+}
+.tbodyPart1{
+    opacity: 0.6;
+}
