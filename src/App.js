@@ -12,7 +12,13 @@ import statisticalData from './assets/statistical-data.json';
 function App() {
   return (
     <>
-      <Profile {...user} />
+      <Profile
+        name={user.name}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
       <Statistics title="UPLOAD STATS" stats={statisticalData} />
       <FriendList friends={friends} />
       <Transactions items={transactions} />

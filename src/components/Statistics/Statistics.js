@@ -27,11 +27,16 @@ function Statistics({ title, stats }) {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.arrayOf,
+  stats: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string,
+      label: PropTypes.string,
+      percentage: PropTypes.number,
+    }),
+  ).isRequired,
 };
 Statistics.defaultProps = {
-  title: 'Title',
-  stats: [],
+  title: '',
 };
 
 export default Statistics;
